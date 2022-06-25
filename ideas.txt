@@ -1,0 +1,38 @@
+at start of the round, ufo flies across screen
+- A number of enemies will spawn in varying positions
+- All enemies move laterally across the screen
+- There needs to be something that tracks how many enemies are currently on screen at any time
+- When this reaches 0, then the rounds ends.
+- Round no. increases
+- Repeat loop
+
+- Work on obstacles/houses (X)
+- Obstacles take damage when hit by enemy projectiles (X)
+- Player loses life when hit by enemy projectiles
+- Collision between projectiles and Aliens (X)
+- Alien shoot projectile (X)
+  - Each Enemy() has a projectile object that it will instantiate when it needs to shoot
+  - Shoot is dictated by a random.randint()
+  - OR
+  - Select random enemy sprite from group
+  - Give that enemy a projectile and shoot it
+
+
+TODO
+- Player loses life when hit by enemy projectiles (X)
+- Enemy projectile will change to a flame sprite when it collides with obstacle
+  - Each enemy projectile needs a timer
+  - When it collides with an obstacle:
+      - Projectile.destroyed = True, which stops it from moving in the Update() method, because it only moves if projectile.destroyed = False
+      - start the timer, change the sprite to flame
+  - In Update method, check if the desired time has elapsed and then call self.kill()
+- Score feature (Top of Screen)
+- Lives feature (Top of Screen) (X)
+- UFO feature (Flies by every 20 or so seconds (and at beginning before round starts))
+
+- use pixel alphas to change color when taking damage (X)
+  - https://stackoverflow.com/questions/58663480/how-to-make-player-enemy-change-colour-when-hit
+
+- If player gets hit
+  - Player can't shoot for 3 seconds
+  - Recharge bar turns red

@@ -1,0 +1,6 @@
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 800
+WINDOW_TITLE = "Space Invaders"
+ENEMIES = ["purple", "red", "blue"]
+GAP_SIZE = 50
+MENU_FONT_SIZE = 50
